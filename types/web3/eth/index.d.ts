@@ -88,8 +88,8 @@ export interface Eth {
     getBalance(
         address: string,
         defaultBlock?: BlockType,
-        cb?: Callback<number>
-    ): Promise<number>;
+        cb?: Callback<BigNumber>
+    ): Promise<BigNumber>;
     getBlock(
         number: BlockType,
         returnTransactionObjects?: boolean,
